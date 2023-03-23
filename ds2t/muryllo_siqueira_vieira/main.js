@@ -1,7 +1,12 @@
 'use strict'
 
-import { contatos } from "./contato.js"
+//import { contatos } from "./contato.js"
+import { getContatos } from "./contatos.js"
 
+//const contatos = await getDados('11987876567')
+//const contatos = await getDados('11966578996')
+//const contatos = await getDados('11955577796')
+const contatos = await getDados('1194457796')
 const criarCard = (contato, indice) => {
 
     const conversa = document.createElement('div')
@@ -158,6 +163,6 @@ const carregarContatos = () => {
 
     container.replaceChildren(...contatosMensagens)
 }
-const barraDeRolagem = () =>  window.scroll (0, document.body.scrollHeight)
+const barraDeRolagem = () => window.scroll(0, document.body.scrollHeight)
 
 carregarContatos()
